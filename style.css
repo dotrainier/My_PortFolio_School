@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Geist:wght@100..900&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    background-color: #000;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+.noise-bg{
+    background-image: url('/src/images/noise.png');
+    position: fixed;
+    inset: 0;
+    opacity: 0.10;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: #000;
+}
+
+.header-left{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Geist", sans-serif;
+    font-weight: bold;
+}
+
+.header #logo-header{
+    width: 30px;
+    height: 30px;
+}
+
+.header-email{
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 8px;
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    font-family: "Geist", sans-serif;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.intro-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+}
+
+
+.intro-greetings, .intro-career{
+    font-family: "Fira Sans", sans-serif;
+}
+
+.intro-greetings{
+    font-size: 35px;
+}
+
+.intro-name{
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+}
+
+.intro-career{
+    padding-top: 8px;
+    padding-left: 60px;
+    font-size: 25px;
+}
+
+.intro-career .intro-career-syntax{
+    color: #2B7FFF;
+}
+
+.intro-container-bottom{
+    position: absolute;
+    bottom: 16px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.intro-scroll-container{
+    position: absolute;
+    inset: 60% 80%;
+    font-family: "Geist", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-size: 10px;
+}
+
+.intro-scroll{
+    display: flex;
+    width: max-content;
+}
+
+.intro-scroll-line{
+    height: 1px;
+    width: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.intro-scroll-icon{
+    animation: jumpIcon 0.8s infinite alternate ease-in-out;
+}
+
+
+@keyframes jumpIcon {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-4px);
+    }
+}
+
+
+.about-section{
+    padding: 24px 16px;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 100px;
+}
+
+.about-picture-container{
+    width: 300px;
+    aspect-ratio: 4/5;
+    position: relative;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.about-empty-box{
+    position: absolute;
+    inset: 0;
+    border-right: 3px solid #2B7FFF;
+    border-bottom: 3px solid #2B7FFF;
+    border-radius: inherit;
+    background-color: #F6FFF9;
+}
+
+#about-my-pic{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    z-index: 2;
+    position: relative;
+    transform: rotate(3deg);
+    transition: transform 300ms ease-in-out;
+    object-fit: cover;
+    display: block; 
+}
+
+#about-my-pic:hover{
+    transform: rotate(0deg);
+}
+
+.about-info{
+    max-width: 800px;
+}
+
+.about-description{
+    font-family: "Geist", sans-serif;
+    font-size: 18px;
+    padding-top: 8px;
+    color: #BCB4B4;
+}
+
+.about-description-animate-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-description-animate {
+    margin-top: 50px;
+    overflow: hidden;
+    width: 430px; 
+    white-space: nowrap;
+    position: relative;
+}
+
+.description-animate-right {
+    display: flex;
+    gap: 8px;
+    width: max-content; 
+    animation: slideRight 7s linear infinite;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(-0%); 
+    }
+}
+
+.description-animate-left {
+    display: flex;
+    gap: 8px;
+    width: max-content; 
+    animation: slideLeft 7s linear infinite;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.techstack-container{
+    margin-top: 150px;
+    padding: 24px 150px;
+}
+
+.techstack-title-container{
+    display: flex;
+    gap: 4px;
+    font-size: 40px;
+    font-family: "Playfair Display", serif;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+.techstack-line{
+    height: 2px;
+    width: 50px;
+    background-color: #fff;
+    margin-top: 35px;
+}
+
+.techstack-boxes{
+    display: flex;
+    justify-content:space-between;
+    gap: 50px;
+    align-items: stretch;
+}
+
+.techstack-box-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techstack-box-container .techstack-box{
+    background-color: #0D0C0C;
+    position: relative;
+    z-index: 10;
+    border-radius: 8px;
+    padding: 32px 24px;
+    box-sizing: border-box;
+    flex: 1;
+    width: 300px;
+}
+
+.techstack-box-title{
+    font-family: "Inria Sans", sans-serif;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.box-tech-row{
+    display: flex;
+    justify-content:space-around;
+    align-items: stretch;
+}
+
+.tech-logo-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+}
+
+
+.techstack-box{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.techstack-box .tech-logo{
+    height: 40px;
+}
+
+#tailwind-logo{
+    height: 28px;
+}
+
+.techstack-box .tech-name{
+    font-family: "Inria Sans", sans-serif;
+    font-size: 12px;
+}
+
+.projects-container{
+    margin-top: 100px;
+    padding: 40px 150px;
+}
+
+.projects-header-title{
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    margin-bottom: 48px;
+}
+
+.projects-grid{
+    display: flex;
+    gap: 48px;
+    position: relative;
+    align-items: start; 
+}
+
+.projects-grid-first, .projects-grid-second{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.projects-grid-first{
+    flex: 6; 
+}
+
+.projects-grid-second{
+    flex: 4;
+}
+
+.projects-box{
+    overflow: hidden;
+}
+
+.projects-box a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.projects-long-box{
+    background-color: #1A1A1B;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.projects-small-box{
+    background-color: #1A1A1B;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.project-img-container{
+    overflow: hidden;
+}
+
+.project-img{
+    display: block;
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    transition: transform 300ms ease-in-out;
+}
+
+.projects-small-box .project-img{
+    height: 280px;
+}
+
+.projects-box:hover .project-img{
+    transform: scale(1.1);
+}
+
+.project-name{
+    padding: 30px 32px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.projects-tools{
+    position: absolute;
+    top: 8px;
+    padding-inline: 32px;
+    font-size: 12px;
+    left: 0;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-style: italic;
+}
+
+.projects-tools span{
+    padding-right: 5px;
+}
+
+.show-project{
+    font-size: 14px;
+    color: #fff;
+    font-family: "Fira Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transform: translateY(50px);
+    transition: transform 400ms ease-in-out;
+}
+
+.show-project #line{
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.projects-box:hover .show-project{
+    transform: translateY(0px)
+}
+
+#left-small-box{
+    width: 65%;
+}
+
+
+.certifications-container{
+    margin-top: 100px;
+    padding: 40px 150px;
+}
+
+.certifications-title{
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.certifications-boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    place-items: center;
+    justify-content: center; 
+    gap: 48px;
+}
+
+.certifications-box{
+    background-color: #2B7FFF;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.certifications-box img{
+    display: block;
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+    border-radius: inherit;
+    position: relative;
+}
+
+
+.certifications-download-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%; 
+    border-radius: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+    
+    transition: height 500ms ease-in-out;
+    box-sizing: border-box;
+}
+
+.certifications-box:hover .certifications-download-container {
+    height: 100%;
+}
+
+.certifications-download-container a {
+   text-decoration: none;
+   color: #333333;
+   font-family: "Playfair Display", serif;
+   font-weight: 700;
+   font-size: 20px;
+   opacity: 0;
+   transition: opacity 300ms ease-in-out;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+.certifications-box:hover .certifications-download-container a{
+    opacity: 1;
+    transition-delay: 600ms; 
+}
+
+.certifications-download-container a svg{
+    transform: rotate(45deg);
+    font-size: 50px;
+    margin-bottom: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+

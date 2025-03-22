@@ -1,0 +1,98 @@
+.intro-greetings{
+    opacity: 0;
+    animation: helloAnimate 1000ms ease-out 1000ms forwards;
+}
+
+.intro-name{
+    opacity: 0;
+    animation: introName 1000ms ease-out 1000ms forwards;
+}
+
+.intro-career{
+    opacity: 0;
+    animation: introCareer 1000ms ease-out 2000ms forwards  ;
+}
+
+.header{
+    opacity: 0;
+    animation: Header 1000ms ease-out 2500ms forwards ;
+}
+
+.intro-scroll-container, .intro-container-bottom{
+    opacity: 0;
+    animation: FadeIn 1000ms ease-out 3500ms forwards ;
+}
+
+.monitorToFadeIn {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.monitorToFadeIn.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+@keyframes helloAnimate {
+    from {
+        opacity: 0;
+        transform: translate3d(-50%, 0, 0);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    
+}
+
+@keyframes introName {
+    from {
+        opacity: 0;
+        transform: translate3d(50%, 0, 0);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+}
+
+@keyframes introCareer {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+}
+
+@keyframes Header {
+    from {
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+      }
+    
+      to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+}
+
+
