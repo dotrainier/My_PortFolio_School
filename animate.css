@@ -34,6 +34,73 @@
     transform: translateY(0);
 }
 
+.monitorToFadeLeft {
+    opacity: 0;
+
+}
+
+.monitorToFadeLeft.visible {
+    animation: fadeInLeft 500ms ease-out forwards;
+}
+
+.monitorToScaleIn{
+    scale: 0;
+}
+
+.monitorToScaleIn.visible{
+    animation: ScaleIn 500ms ease-out forwards 500ms;
+}
+
+@keyframes ScaleIn {
+    from{
+        scale: 0;
+    }
+    to{
+        scale: 1;
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-50%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.monitorToFadeRight {
+    opacity: 0;
+
+}
+
+.monitorToFadeRight.visible {
+    animation: fadeInRight 500ms ease-out forwards;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(50%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 
 
 @keyframes helloAnimate {

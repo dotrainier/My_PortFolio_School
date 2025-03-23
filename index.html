@@ -16,13 +16,20 @@
                 <img src="./src/logos/own_logo.svg" alt="my-logo" id="logo-header">
                 Rainier Sapin
             </div>
-            <a class="header-email" href="https://mail.google.com/mail/?view=cm&fs=1&to=rainiersapin0131@gmail.com" target="_blank">
+            <div class="header-time-container">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 5H18C18.7956 5 19.5587 5.31607 20.1213 5.87868C20.6839 6.44129 21 7.20435 21 8V17C21 17.7956 20.6839 18.5587 20.1213 19.1213C19.5587 19.6839 18.7956 20 18 20H5C4.20435 20 3.44129 19.6839 2.87868 19.1213C2.31607 18.5587 2 17.7956 2 17V8C2 7.20435 2.31607 6.44129 2.87868 5.87868C3.44129 5.31607 4.20435 5 5 5ZM5 6C4.5 6 4.06 6.17 3.72 6.47L11.5 11.5L19.28 6.47C18.94 6.17 18.5 6 18 6H5ZM11.5 12.71L3.13 7.28C3.05 7.5 3 7.75 3 8V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V8C20 7.75 19.95 7.5 19.87 7.28L11.5 12.71Z" fill="black"/>
+                    <path d="M12.75 7C12.75 6.80109 12.671 6.61032 12.5303 6.46967C12.3897 6.32902 12.1989 6.25 12 6.25C11.8011 6.25 11.6103 6.32902 11.4697 6.46967C11.329 6.61032 11.25 6.80109 11.25 7V12C11.2499 12.1272 11.2822 12.2522 11.3438 12.3635C11.4054 12.4747 11.4942 12.5685 11.602 12.636L14.602 14.511C14.7707 14.6166 14.9744 14.6508 15.1683 14.6061C15.2643 14.584 15.355 14.5433 15.4353 14.4861C15.5155 14.4289 15.5837 14.3565 15.636 14.273C15.6883 14.1895 15.7236 14.0965 15.7399 13.9993C15.7562 13.9022 15.7532 13.8027 15.7311 13.7067C15.709 13.6107 15.6683 13.52 15.6111 13.4397C15.5539 13.3595 15.4815 13.2913 15.398 13.239L12.75 11.584V7Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.25C9.67936 3.25 7.45376 4.17187 5.81282 5.81282C4.17187 7.45376 3.25 9.67936 3.25 12C3.25 14.3206 4.17187 16.5462 5.81282 18.1872C7.45376 19.8281 9.67936 20.75 12 20.75C14.3206 20.75 16.5462 19.8281 18.1872 18.1872C19.8281 16.5462 20.75 14.3206 20.75 12C20.75 9.67936 19.8281 7.45376 18.1872 5.81282C16.5462 4.17187 14.3206 3.25 12 3.25ZM4.75 12C4.75 11.0479 4.93753 10.1052 5.30187 9.22554C5.66622 8.34593 6.20025 7.5467 6.87348 6.87348C7.5467 6.20025 8.34593 5.66622 9.22554 5.30187C10.1052 4.93753 11.0479 4.75 12 4.75C12.9521 4.75 13.8948 4.93753 14.7745 5.30187C15.6541 5.66622 16.4533 6.20025 17.1265 6.87348C17.7997 7.5467 18.3338 8.34593 18.6981 9.22554C19.0625 10.1052 19.25 11.0479 19.25 12C19.25 13.9228 18.4862 15.7669 17.1265 17.1265C15.7669 18.4862 13.9228 19.25 12 19.25C10.0772 19.25 8.23311 18.4862 6.87348 17.1265C5.51384 15.7669 4.75 13.9228 4.75 12Z" fill="white"/>
                 </svg>
-                    
-                Send Email
-            </a>
+                
+                <span id="pht-time">
+                    9: 08
+                </span>
+
+                <span id="pht">
+                    (PHT)
+                </span>
+            </div>
        </header>
         <section class="intro-container">
             <div>
@@ -81,7 +88,7 @@
 
 
         <section class="techstack-container">
-            <div class="techstack-title-container">
+            <div class="techstack-title-container monitorToFadeIn">
                 <div class="techstack-line"></div>
                 <div>Tech Stack</div>
                 <div class="techstack-line"></div>
@@ -92,36 +99,36 @@
                     <div class="techstack-box-title"> Front-end </div>
                     <div class="techstack-box">
                         <div class="box-tech-row">
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                               <img src="/src/logos/react.svg" alt="react" class="tech-logo">
                               <div class="tech-name">React</div>
                             </div>
 
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/tailwind.svg" alt="tailwind" class="tech-logo" id="tailwind-logo">
                                 <div class="tech-name">Tailwind</div>
                             </div>
 
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/nextjs.svg" alt="nextjs" class="tech-logo">
                                 <div class="tech-name">NextJs</div>
                             </div>
                         </div>
 
                         <div class="box-tech-row">
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/javascript.svg" alt="javascript" class="tech-logo">
                                 <div class="tech-name">Javascript</div>
                             </div>
 
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/typescript.svg" alt="typescript" class="tech-logo">
                                 <div class="tech-name">Typescript</div>
                             </div>
                         </div>
 
                         <div class="box-tech-row">
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/framer.svg" alt="framer" class="tech-logo">
                                 <div class="tech-name">Framer</div>
                             </div>
@@ -134,17 +141,17 @@
                     <div class="techstack-box">
                         
                         <div class="box-tech-row">
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/expressjs.svg" alt="expressjs" class="tech-logo">
                                 <div class="tech-name">ExpressJs</div>
                             </div>
 
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/nodejs.svg" alt="nodejs" class="tech-logo">
                                 <div class="tech-name">NodeJs</div>
                             </div>
 
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/posgresql.svg" alt="posgresql" class="tech-logo">
                                 <div class="tech-name">PosgreSQL</div>
                             </div>
@@ -152,29 +159,29 @@
 
                         
                         <div class="box-tech-row">
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn ">
                                 <img src="/src/logos/mysql.svg" alt="mysql" class="tech-logo">
                                 <div class="tech-name">MySQL</div>
                             </div>
 
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/javascript.svg" alt="javascript" class="tech-logo">
                                 <div class="tech-name">Javascript</div>
                             </div>
                         </div>
 
                         <div class="box-tech-row">
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/typescript.svg" alt="typescript" class="tech-logo">
                                 <div class="tech-name">Typescript</div>
                             </div>
 
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/php.svg" alt="php" class="tech-logo">
                                 <div class="tech-name">PHP</div>
                             </div>
 
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/python.svg" alt="python" class="tech-logo">
                                 <div class="tech-name">Python</div>
                             </div>
@@ -187,41 +194,41 @@
                     <div class="techstack-box-title"> Miscellaneous </div>
                     <div class="techstack-box">
                         <div class="box-tech-row">
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/git.svg" alt="git" class="tech-logo">
                                 <div class="tech-name">Git</div>
                             </div>
 
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/github.svg" alt="Github" class="tech-logo">
                                 <div class="tech-name">Github</div>
                             </div>
                         </div>
 
                         <div class="box-tech-row">
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/firebase.svg" alt="firebase" class="tech-logo">
                                 <div class="tech-name">Firebase</div>
                             </div>
 
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/postman.svg" alt="postman" class="tech-logo">
                                 <div class="tech-name">Postman</div>
                             </div>
 
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/ionic.svg" alt="ionic" class="tech-logo">
                                 <div class="tech-name">Ionic</div>
                             </div>
                         </div>
 
                         <div class="box-tech-row">
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/netlify.svg" alt="netlify" class="tech-logo">
                                 <div class="tech-name">Netlify</div>
                             </div>
 
-                            <div class="tech-logo-container">
+                            <div class="tech-logo-container monitorToScaleIn">
                                 <img src="/src/logos/vercel.svg" alt="vercel" class="tech-logo">
                                 <div class="tech-name">Vercel</div>
                             </div>
@@ -371,7 +378,7 @@
         <section class="certifications-container">
             <div class="certifications-title">Certifications ~</div>
             <div class="certifications-boxes">
-                <div class="certifications-box">
+                <div class="certifications-box monitorToFadeLeft">
                     <img src="/src/images/certifications/CS50x.png" alt="CS50X">
                     <div class="certifications-download-container">
                         <a href="/src/pdf/CS50x.pdf" download="CS50X-Rainier Sapin">
@@ -380,7 +387,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="certifications-box">
+                <div class="certifications-box monitorToFadeRight">
                     <img src="/src/images/certifications/CS50P.png" alt="CS50P">
                     <div class="certifications-download-container">
                         <a href="/src/pdf/CS50P.pdf" download="CS50P-Rainier Sapin">
@@ -388,6 +395,70 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 20V4.121M5.25 10.25l5.69-5.69A1.5 1.5 0 0 1 12 4.121m6.75 6.129l-5.69-5.69A1.5 1.5 0 0 0 12 4.122"/></svg>
                         </a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts-container">
+            <div class="first-row">
+                <div class="email-container">
+                    <div class="email-title">Get In Touch</div>
+                    <div class="email-text">
+                        <div class="text">rainiersapin0131@gmail.com</div>
+                        <div class="copy-email" onclick="handleCopyClick()">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.33331 5.3335H2.66665C1.93131 5.3335 1.33331 5.9315 1.33331 6.66683V13.3335C1.33331 14.0688 1.93131 14.6668 2.66665 14.6668H9.33331C10.0686 14.6668 10.6666 14.0688 10.6666 13.3335V6.66683C10.6666 5.9315 10.0686 5.3335 9.33331 5.3335Z" fill="white"/>
+                                <path d="M13.3333 1.3335H6.66665C6.31302 1.3335 5.97389 1.47397 5.72384 1.72402C5.47379 1.97407 5.33331 2.31321 5.33331 2.66683V4.00016H10.6666C11.0203 4.00016 11.3594 4.14064 11.6095 4.39069C11.8595 4.64074 12 4.97987 12 5.3335V10.6668H13.3333C13.6869 10.6668 14.0261 10.5264 14.2761 10.2763C14.5262 10.0263 14.6666 9.68712 14.6666 9.3335V2.66683C14.6666 2.31321 14.5262 1.97407 14.2761 1.72402C14.0261 1.47397 13.6869 1.3335 13.3333 1.3335Z" fill="white"/>
+                            </svg>
+                            <span id="copy_text">
+                                Copy
+                            </span>        
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="contacts-list">
+                    <li>
+                        <a href="https://www.facebook.com/rxxx31/" target="_blank">
+                            Facebook
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.1189 8.82227L11.1185 8.81732L11.1291 4.20345L1.49969 13.8144L0.0868873 12.3988L9.69011 2.81399L5.1328 2.80338L5.13775 0.804388L13.138 0.822772L13.1189 8.82227Z" fill="white"/>
+                            </svg>
+                                      
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/rainier-sapin-69858a284/" target="_blank">
+                            LinkedIn
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.1189 8.82227L11.1185 8.81732L11.1291 4.20345L1.49969 13.8144L0.0868873 12.3988L9.69011 2.81399L5.1328 2.80338L5.13775 0.804388L13.138 0.822772L13.1189 8.82227Z" fill="white"/>
+                            </svg>
+                                      
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/rainierXcode" target="_blank">
+                            Github
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.1189 8.82227L11.1185 8.81732L11.1291 4.20345L1.49969 13.8144L0.0868873 12.3988L9.69011 2.81399L5.1328 2.80338L5.13775 0.804388L13.138 0.822772L13.1189 8.82227Z" fill="white"/>
+                            </svg>
+                                      
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="second-row">
+                <div class="copyright-container">
+                    <span> &copy </span>
+                    <span> 2025 </span>
+                    <span> Rainier Sapin </spa>
+                </div>
+
+                <div>
+                    Pampanga, Philippines
                 </div>
             </div>
         </section>
