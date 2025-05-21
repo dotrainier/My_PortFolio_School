@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+  --font-fira: var(--font-fira-code);
+  --font-inter: var(--font-inter);
+  --font-geist-mono: var(--font-geist-mono);
+  --font-geist_sans: var(--font-geist_sans);
+  --font-nunito_sans: var(--font-nunito_sans);
+  --font-nunito: var(--font-nunito);
+}
+
+.loader-chatbot-message {
+  width: 30px;
+  aspect-ratio: 4;
+  --dot-color: #000;
+  --_g: no-repeat radial-gradient(circle closest-side, var(--dot-color) 90%,#0000);
+  background: 
+    var(--_g) 0%   50%,
+    var(--_g) 50%  50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 100%;
+  animation: l7 1s infinite linear;
+}
+
+.dark .loader-chatbot-message {
+  --dot-color: #fff;
+}
+
+@keyframes l7 {
+    33%{background-size:calc(100%/3) 0%  ,calc(100%/3) 100%,calc(100%/3) 100%}
+    50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
+    66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
+}
+
+
+.motivation1{
+  clip-path: polygon(6% 0, 98% 0, 94% 100%, 2% 100%);
+}
+
+
+body{
+  scroll-behavior: smooth;
+}
