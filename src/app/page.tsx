@@ -100,6 +100,11 @@ export default function Home() {
     setMounted(true);
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
+
+
   
   return (
    <>
@@ -161,7 +166,7 @@ export default function Home() {
 
    
 
-    <section className="font-nunito_sans px-48  py-16 ">
+    <section className="font-nunito_sans px-48  py-20 ">
         <StackContainer />
     </section>
 

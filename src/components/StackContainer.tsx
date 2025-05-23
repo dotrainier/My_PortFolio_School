@@ -121,11 +121,24 @@ const toolStacks = [
 gsap.registerPlugin(ScrollTrigger);
 export default function StackContainer() {
     const { theme } = useTheme();
-    useEffect(() => {
+   useEffect(() => {
     gsap.utils.toArray<HTMLElement>('.stack-container').forEach(container => {
-        const stackElements = container.querySelectorAll('.stack, .stackName');
-
-        gsap.fromTo(stackElements,
+        gsap.fromTo(container.querySelector('.stackName'),
+            { y: 50, opacity: 0 },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 0.5,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: container,
+                    start: 'top 70%',
+                    end: 'bottom 75%',
+                    toggleActions: "play none reverse none",
+                }
+            }
+        );
+        gsap.fromTo(container.querySelectorAll('.stack'),
             { y: 50, opacity: 0 },
             {
                 y: 0,
@@ -135,9 +148,10 @@ export default function StackContainer() {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: container,
-                    start: 'top 65%',
+                    start: 'top 73%',
                     end: 'bottom 75%',
                     toggleActions: "play none reverse none",
+                    markers: true
                 }
             }
         );
