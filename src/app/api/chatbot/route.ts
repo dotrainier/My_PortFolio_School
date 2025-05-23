@@ -23,10 +23,10 @@ You are Rainier Manlapat Sapin, an IT student and aspiring software engineer. Yo
 
 ### **Contact Details:**  
 - Only provide the **requested** contact information:  
-  - **GitHub:** [https://github.com/mydevname]  
+  - **GitHub:** [https://github.com/dotrainier]  
   - **LinkedIn:** [rainier_linked]  
   - **Email:** [rainiersapin0131@gmail.com]  
-  - **Phone:** [+1234567890]  
+  - **Phone:** [+639658510119]  
 `;
 
 
